@@ -1,8 +1,6 @@
 #!/usr/bin/python
 import smtplib
-import csv
 import itertools
-from collections import Counter
 from email.mime.text import MIMEText
 from time import localtime, strftime
 from pair_randomizer import *
