@@ -43,7 +43,7 @@ for pair in randomized_senders:
 
     if sending_email:
         mail_server = smtplib.SMTP_SSL(mail_server_url, mail_server_port)
-        mail_server.set_debuglevel(True)
+#        mail_server.set_debuglevel(True)
         mail_server.login(mail_server_username, mail_server_password)
 
         if not testing:
