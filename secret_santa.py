@@ -25,10 +25,6 @@ randomized_senders = generate_random_list(people.keys(), valid_pairs)
 
 print("Final randomized list: " + str(randomized_senders))
 
-if sending_email:
-    mail_server = smtplib.SMTP_SSL(mail_server_url)
-    mail_server.login(mail_server_username, mail_server_password)
-
 # Backup of this year's list for future reference
 results_file = open(strftime("%Y-%m-%d", localtime()) + " results.txt", "w")
 
@@ -46,6 +42,10 @@ for pair in randomized_senders:
     msg['To'] = giver_email
 
     if sending_email:
+        mail_server = smtplib.SMTP_SSL(mail_server_url, mail_server_port)
+        mail_server.set_debuglevel(True)
+        mail_server.login(mail_server_username, mail_server_password)
+
         if not testing:
             # send results to all recipients
             mail_server.sendmail(from_email_addr, [giver_email], msg.as_string())
