@@ -12,15 +12,15 @@ The application can be configured with the _config.py_ file.
 The event participants are contained in _people.csv_, which has the following
 format:
 
-person1Name,person1Email
-person2Name,person2Email
-person3Name,person3Email
+person1Name,person1Email  
+person2Name,person2Email  
+person3Name,person3Email  
 
 So, for example
 
 Marty,mcfly227@example.com  
-Jennifer,jparker@example.com 
-Emmett,docbrown@example.com 
+Jennifer,jparker@example.com  
+Emmett,docbrown@example.com  
 
 would represent the following table:
 
