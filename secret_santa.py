@@ -37,7 +37,7 @@ for pair in randomized_senders:
 
     msg_body = msg_body
     msg = MIMEText(msg_body)
-    msg['Subject'] = "Secret Santa"
+    msg['Subject'] = mail_subject
     msg['From'] = from_email_addr
     msg['To'] = giver_email
 

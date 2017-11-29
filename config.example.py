@@ -7,7 +7,7 @@
 from_email_addr = "krampus@example.com"
 mail_subject = "Secret santa results"
 
-mail_server_url = "mail.example.com"
+mail_server_url = "smtp.example.com"
 mail_server_port = 465
 mail_server_username = "user123"
 mail_server_password = "password"
