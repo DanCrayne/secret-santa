@@ -1,6 +1,10 @@
+# local files which will change per user
 config.py
 people.csv
 exclusions.csv
+
+# text file(s) containing previous results
+*results.txt
+
 *.swp
 *.pyc
-*results.txt
