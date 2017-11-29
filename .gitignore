@@ -1,0 +1,6 @@
+config.py
+people.csv
+exclusions.csv
+*.swp
+*.pyc
+*results.txt
