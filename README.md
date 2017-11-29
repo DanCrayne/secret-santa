@@ -13,14 +13,14 @@ The event participants are contained in _people.csv_, which has the following
 format:
 
 person1Name,person1Email
-person2Name,person2Emai1
-person3Name,person3Emai1
+person2Name,person2Email
+person3Name,person3Email
 
 So, for example
 
-Marty,mcfly227@example.com
-Jennifer,jparker@example.com
-Emmett,docbrown@example.com
+Marty,mcfly227@example.com 
+Jennifer,jparker@example.com 
+Emmett,docbrown@example.com 
 
 would represent the following table:
 
@@ -32,6 +32,6 @@ would represent the following table:
 
 ## Excluding Certain Pairs
 
-Sometimes you may want to exclude pairs of people, for example, friends or
+Sometimes you may want to exclude pairs of people, for example friends or
 couples who will already be getting each other a gift. These pairs are 
 defined in the _exclusions.csv_ file.
