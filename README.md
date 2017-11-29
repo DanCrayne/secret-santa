@@ -18,7 +18,7 @@ person3Name,person3Email
 
 So, for example
 
-Marty,mcfly227@example.com 
+Marty,mcfly227@example.com  
 Jennifer,jparker@example.com 
 Emmett,docbrown@example.com 
 
