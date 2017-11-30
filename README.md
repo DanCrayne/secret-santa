@@ -6,7 +6,11 @@ the participants. This might be used to coordinate an event such as
 [Secret Santa](https://en.wikipedia.org/wiki/Secret_Santa).
 
 ## Configuration
-The application can be configured with the _config.py_ file. 
+
+The configuration file (_config.py_) is used to setup the email server which
+will send the results. This file also allows you to customize the _from_ address
+and email _subject_, as well as set the script to a testing mode (results are not
+sent to the provided email addresses).
 
 ## Participants File
 The event participants are contained in _people.csv_, which has the following
@@ -68,13 +72,6 @@ Griff,Biff
 
 _Note: these exclusions can be entered in either direction, so "Emmett,Marty" is
  the same as "Marty,Emmett"._
-
-## Configuration
-
-The configuration file (_config.py_) is used to setup the email server which
-will send the results. This file also allows you to customize the _from_ address
-and email _subject_, as well as set the script to a testing mode (results are not
-sent to the provided email addresses).
 
 ## Usage
 
