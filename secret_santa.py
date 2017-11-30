@@ -42,16 +42,18 @@ for pair in randomized_senders:
         if not testing:
             # send results to all recipients
             mail_server.sendmail(from_email_addr, giver_email, msg.as_string())
+            print("Notice for {0} sent to {1}".format(pair[0][0], pair[0][1]))
 
         else:
             # send results to the single testing account
             mail_server.sendmail(from_email_addr, test_email_addr, msg.as_string())
+            print("Notice for {0} sent to {1}".format(pair[0][0], test_email_addr))
 
     else:
-            print("(Messages not emailed - check config.py if you would like to change this)")
+        print("Generated gift recipient for {0}".format(pair[0][0]))
+
 
     # Output results to terminal and backup file.
-    print("Notice for {0} sent to {1}".format(pair[0][0], pair[0][1]))
     results_file.write(pair[0][0] + " -> " + pair[1][0] + '\n')
 
 if sending_email:
@@ -59,4 +61,7 @@ if sending_email:
 
 results_file.close()
 
-print('All messages have been sent!')
+if sending_email:
+    print('All messages have been sent!')
+else:
+    print("Messages not emailed - check config.py if you would like to change this")
