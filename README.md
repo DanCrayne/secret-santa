@@ -5,8 +5,12 @@ This is a simple console application which is intended to be used for
 though it could be easily modified to work for similar event types (e.g. Yankee
 Swap). The script takes a list of people and email addresses, and randomly
 generates a giver-receiver pair for each person (as per Secret Santa rules,
-each person is assigned to exactly one other person). The results can be 
-emailed to each participant automatically.
+each person is assigned to exactly one other person).
+
+There are two ways for the results to be discovered:
+1. Each person can be emailed their assigned participant 
+2. A text file in the root directory (secret-santa) contains all results
+(although this would ruin the suprise for whoever views it :)
 
 ## Configuration
 
