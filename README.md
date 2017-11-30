@@ -13,36 +13,58 @@ The event participants are contained in _people.csv_, which has the following
 format:
 
 ```
-person1Name, person1Email  
-person2Name, person2Email  
-person3Name, person3Email  
+participant1Name, participant1Email  
+participant2Name, participant2Email  
+participant3Name, participant3Email  
 ```
 
-So, for example
+If you are not familiar with the format of Comma Separated Values (CSV) files, 
+then the following should help:
+
+Say we have a small get together with some of the characters from 
+_Back to the Future_: Marty, Jennifer, Emmett, George, Lorraine, Griff, 
+and Biff. We would create a file named '_people.csv_' in the root
+(secret-santa) directory, and enter both the names and email addresses
+of each participant as follows:
 
 ```
-Marty, mcfly227@example.com  
-Jennifer, jparker@example.com  
-Emmett, docbrown@example.com  
+Marty,mcfly227@example.com
+Jennifer,jparker@example.com
+Emmett,docbrown@example.com
+George,georgefly@example.com
+Lorraine,lmcfly@example.com
+Griff,tannen9738@example.com
+Biff,btannen808@example.com
 ```
 
-would represent the following table:
+This csv file would represent the following table:
 
-|Name    |Email               |
-|--------|--------------------|
-|Marty   |mcfly227@example.com|
-|Jennifer|jparker@example.com |
-|Emmett  |docbrown@example.com|
+|Name    |Email                  |
+|--------|-----------------------|
+|Marty   |mcfly227@example.com   |
+|Jennifer|jparker@example.com    |
+|Emmett  |docbrown@example.com   |
+|George  |georgefly@example.com  |
+|Lorraine|lmcfly@example.com     |
+|Griff   |tannen9738@example.com |
+|Biff    |btannen808@example.com |
 
-## Excluding Certain Pairs
+## Excluding Certain Pairs of Participants
 
-Sometimes you may want to exclude pairs of people, for example friends or
+Sometimes you may want to exclude pairs of participants, for example friends or
 couples who will already be getting each other a gift. These pairs are 
 defined in the _exclusions.csv_ file.
 
-For example, if we don't want Marty and Jennifer to purchase each other gifts,
+For example, if we don't want the following people to purchase each other gifts:
+Emmet and Marty, Jennifer and Marty, George and Lorraine, Griff and Biff;
 then we can add the following line to _exclusions.csv_:
 
 ```
-Marty,Jennifer
+Emmett,Marty
+Jennifer,Marty
+George,Lorraine
+Griff,Biff
 ```
+
+_Note: these exclusions can be entered in either direction, so "Emmett,Marty" is
+ the same as "Marty,Emmett"._
