@@ -7,8 +7,10 @@ Swap). The script takes a list of people and email addresses, and randomly
 generates a giver-receiver pair for each person (as per Secret Santa rules,
 each person is assigned to exactly one other person).
 
-There are two ways for the results to be discovered:
-1. Each person can be emailed their assigned participant 
+Once the results are generated, there are two ways for them to be discovered:
+1. Each person is automatically emailed their assigned participant if the 
+configuration file is setup (default behavior) and email addresses are given
+in _people.csv_ (see _Participants File_ section below for details).
 2. A text file in the root directory (secret-santa) contains all results
 (although this would ruin the suprise for whoever views it :)
 
