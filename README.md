@@ -1,4 +1,4 @@
-# secret-santa
+# Secret Santa Randomizer and Mailer
 
 Simple console application which takes a list of people (with email addresses)
 and associates them into giver-receiver pairs. The results will be emailed to 
@@ -39,3 +39,10 @@ would represent the following table:
 Sometimes you may want to exclude pairs of people, for example friends or
 couples who will already be getting each other a gift. These pairs are 
 defined in the _exclusions.csv_ file.
+
+For example, if we don't want Marty and Jennifer to purchase each other gifts,
+then we can add the following line to _exclusions.csv_:
+
+```
+Marty,Jennifer
+```
