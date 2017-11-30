@@ -1,9 +1,12 @@
 # Secret Santa Randomizer and Mailer
 
-Simple console application which takes a list of people (with email addresses)
-and associates them into giver-receiver pairs. The results will be emailed to 
-the participants. This might be used to coordinate an event such as 
-[Secret Santa](https://en.wikipedia.org/wiki/Secret_Santa).
+This is a simple console application which is intended to be used for 
+[Secret Santa](https://en.wikipedia.org/wiki/Secret_Santa) events -
+though it could be easily modified to work for similar event types (e.g. Yankee
+Swap). The script takes a list of people and email addresses, and randomly
+generates a giver-receiver pair for each person (as per Secret Santa rules,
+each person is assigned to exactly one other person). The results can be 
+emailed to each participant automatically.
 
 ## Configuration
 
