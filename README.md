@@ -68,3 +68,24 @@ Griff,Biff
 
 _Note: these exclusions can be entered in either direction, so "Emmett,Marty" is
  the same as "Marty,Emmett"._
+
+## Configuration
+
+The configuration file (_config.py_) is used to setup the email server which
+will send the results. This file also allows you to customize the from address
+and email subject, as well as set the script to a testing mode (results are not
+sent to the provided email addresses).
+
+## Usage
+
+Once _people.csv_ and _config.py_ (and optionally _exclusions.csv_) are 
+setup, the script is envoked with:
+
+```
+python secret\_santa.py
+```
+
+You should see a line of output for each person in _people.csv_, indicating 
+that the result has been sent to that person.
+
+Enjoy!
